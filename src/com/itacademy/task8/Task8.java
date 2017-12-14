@@ -1,4 +1,4 @@
-package com.intexsoft.task8;
+package com.itacademy.task8;
 
 public class Task8 {
 

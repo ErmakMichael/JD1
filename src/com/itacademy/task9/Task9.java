@@ -1,4 +1,4 @@
-package com.intexsoft.task9;
+package com.itacademy.task9;
 
 import java.util.Random;
 

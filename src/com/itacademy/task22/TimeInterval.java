@@ -21,11 +21,21 @@ public class TimeInterval {
 	}
 	
 	public int getSecond() {
-		return this.sec;
+		return sec + min * 60 + hour * 3600;
 	}
-
-	public static void main(String[] args) {
-
+	
+	public void printTimeInSec() {
+		System.out.println("Intervar in sec: " + this.getSecond());
 	}
+	
+	public void printTime() {
+		System.out.println(String.format("Time interval: %s h, %s min, %s sec", this.hour, this.min, this.sec));
+	}
+	
+	public int compareTime (TimeInterval t) {
+		return this.getSecond() - t.getSecond();
+	}
+	
+	
 
 }

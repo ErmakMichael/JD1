@@ -1,4 +1,4 @@
-package com.intexsoft.task20;
+package com.itacademy.task20;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;;

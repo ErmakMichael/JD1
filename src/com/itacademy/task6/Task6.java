@@ -1,4 +1,4 @@
-package com.intexsoft.task6;
+package com.itacademy.task6;
 
 public class Task6 {
 

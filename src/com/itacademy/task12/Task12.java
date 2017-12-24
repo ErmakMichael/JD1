@@ -1,4 +1,4 @@
-package com.intexsoft.task12;
+package com.itacademy.task12;
 
 //import java.util.Random;
 

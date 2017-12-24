@@ -1,4 +1,4 @@
-package com.intexsoft.task4;
+package com.itacademy.task4;
 
 public class Task4 {
 

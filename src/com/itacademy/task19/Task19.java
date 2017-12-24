@@ -1,4 +1,4 @@
-package com.intexsoft.task19;
+package com.itacademy.task19;
 
 public class Task19 {
 

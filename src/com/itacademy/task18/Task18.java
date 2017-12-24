@@ -1,4 +1,4 @@
-package com.intexsoft.task18;
+package com.itacademy.task18;
 
 public class Task18 {
 

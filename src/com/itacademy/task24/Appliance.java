@@ -7,39 +7,40 @@ public abstract class Appliance {
 	protected String releaseDate;
 	protected boolean isOn;
 
-	protected String getName() {
+
+	public String getName() {
 		return name;
 	}
 
-	protected void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	protected String getModel() {
+	public String getModel() {
 		return model;
 	}
 
-	protected void setModel(String model) {
+	public void setModel(String model) {
 		this.model = model;
 	}
 
-	protected String getReleaseDate() {
+	public String getReleaseDate() {
 		return releaseDate;
 	}
 
-	protected void setReleaseDate(String releaseDate) {
+	public void setReleaseDate(String releaseDate) {
 		this.releaseDate = releaseDate;
 	}
 
-	protected boolean getIsOn() {
+	public boolean getIsOn() {
 		return isOn;
 	}
 
-	protected void setIsOn(boolean isOn) {
+	public void setIsOn(boolean isOn) {
 		this.isOn = isOn;
 	}
 
-	protected void printStatus() {
+	public void printStatus() {
 		if (isOn) {
 			System.out.println("On");
 		} else {
@@ -48,7 +49,7 @@ public abstract class Appliance {
 
 	}
 	
-	protected Appliance(String name, String model, String releaseDate) {
+	public Appliance(String name, String model, String releaseDate) {
 		this.name = name;
 		this.model = model;
 		this.releaseDate = releaseDate;

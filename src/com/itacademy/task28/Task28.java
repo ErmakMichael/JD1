@@ -23,6 +23,7 @@ public class Task28 {
 		System.out.println();
 
 		Iterator<Integer> iterator = assessments.iterator();
+		
 		int maxNumber = iterator.next();
 		while (iterator.hasNext()) {
 			int temp = iterator.next();

@@ -2,10 +2,10 @@ package com.itacademy.task24;
 
 public abstract class Appliance {
 	
-	protected String name;
-	protected String model;
-	protected String releaseDate;
-	protected boolean isOn;
+	private String name;
+	private String model;
+	private String releaseDate;
+	private boolean isOn;
 
 
 	public String getName() {

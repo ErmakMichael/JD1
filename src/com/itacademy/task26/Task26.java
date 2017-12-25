@@ -1,13 +1,14 @@
 package com.itacademy.task26;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Task26 {
 
 	public static void main(String[] args) {
 
-		ArrayList<Integer> assessments = new ArrayList<Integer>();
+		List<Integer> assessments = new ArrayList<Integer>();
 		Random random = new Random();
 
 		int size = random.nextInt(20);

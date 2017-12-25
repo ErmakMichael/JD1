@@ -2,10 +2,11 @@ package com.itacademy.task25;
 
 public abstract class BankCard {
 
-	protected int pin;
-	protected int cvv;
-	protected String cardHolder;
-	protected int validity;
+	private int pin;
+	private int cvv;
+	private String cardHolder;
+	private int validity;
+	
 	public int getPin() {
 		return pin;
 	}

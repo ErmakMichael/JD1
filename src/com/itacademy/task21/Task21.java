@@ -4,11 +4,11 @@ public class Task21 {
 
 	public static void main(String[] args) {
 		String str = "str";
-		TestTimeString(str);
-		TestTimeStringBulder(str);
+		testTimeString(str);
+		testTimeStringBulder(str);
 	}
 
-	public static long TestTimeString(String str) {
+	public static void testTimeString(String str) {
 
 		long startTime = System.nanoTime();
 		for (int i = 0; i < 20; i++) {
@@ -18,10 +18,9 @@ public class Task21 {
 		long resultTime = endTime - startTime;
 		String text = String.format("Programm worked with String %s nanosec", resultTime);
 		System.out.println(text);
-		return resultTime;
 	}
 
-	public static long TestTimeStringBulder(String str) {
+	public static void testTimeStringBulder(String str) {
 		long startTime = System.nanoTime();
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < 20; i++) {
@@ -31,7 +30,6 @@ public class Task21 {
 		long resultTime = endTime - startTime;
 		String text = String.format("Programm worked with StringBulder %s nanosec", resultTime);
 		System.out.println(text);
-		return resultTime;
 	}
 
 }

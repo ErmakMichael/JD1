@@ -77,18 +77,19 @@ public class Bankomat { // I added a fourth property of the class to make it eas
 				note10--;
 				n10++;
 			}
-			System.out.println(System.out.format("Money - %s\n note10 - %s\n note20 - %s\n note50 - %s\n note100 - %s\n ", cash, n10, n20, n50, n100));
+			System.out.println(String.format("Money - %s\nnote10 - %s\nnote20 - %s\nnote50 - %s\nnote100 - %s\n ", cash,
+					n10, n20, n50, n100));
 		} else {
 			System.out.println("Issue of money is not possible");
 		}
 		return resultWithdrawMoney;
 	}
 
-	public void getStatusMoney() {
-		System.out.println(System.out.format("note10 - %s\n note20 - %s\n note50 - %s\n note100 - %s\n", note10, note20, note50, note100));
+	public void doStatusMoney() {
+		System.out.println(String.format("note10 - %s\nnote20 - %s\nnote50 - %s\nnote100 - %s\n", note10, note20,
+				note50, note100));
 	}
-	
-	
+
 	public Bankomat(int note10, int note20, int note50, int note100) {
 		this.note10 = note10;
 		this.note20 = note20;

@@ -25,7 +25,7 @@ public class TimeInterval {
 	}
 	
 	public void printTimeInSec() {
-		System.out.println("Intervar in sec: " + this.getSecond());
+		System.out.println("Interval in sec: " + this.getSecond());
 	}
 	
 	public void printTime() {

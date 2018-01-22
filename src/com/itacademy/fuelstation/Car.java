@@ -15,6 +15,7 @@ public class Car {
 
 	public Fuel getTypeFuel() {
 		return typeFuel;
+		
 	}
 
 	public int getQuantityFuel() {

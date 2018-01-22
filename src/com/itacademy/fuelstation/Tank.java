@@ -12,6 +12,18 @@ public class Tank {
 		this.quantityFuel = quantityFuel;
 	}
 
+	public Fuel getFuelType() {
+		return fuelType;
+	}
+
+	public void setQuantityFuel(int quantityFuel) {
+		this.quantityFuel = quantityFuel;
+	}
+
+	public void setFuelType(Fuel fuelType) {
+		this.fuelType = fuelType;
+	}
+
 	public int getQuantityFuel() {
 		return quantityFuel;
 	}

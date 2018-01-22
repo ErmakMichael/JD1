@@ -13,7 +13,7 @@ public class Test {
 		Station station = new Station(tanks);
 
 		for (int i = 0; i < Fuel.values().length; i++) {
-			tanks.add(new Tank(Fuel.values()[i], 20));
+			tanks.add(new Tank(Fuel.values()[i], 100));
 			System.out.println(String.format("Type %s quantity %s ", Fuel.values()[i], tanks.get(i).getQuantityFuel()));
 		}
 		for (int i = 0; i < 5; i++) {
@@ -25,11 +25,6 @@ public class Test {
 			synchronized (cars) {
 				if (cars.isEmpty()) {
 					cars.add(new Car());
-					try {
-						Thread.sleep(100);
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
 					cars.notify();
 				}
 			}

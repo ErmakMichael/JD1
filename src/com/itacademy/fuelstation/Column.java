@@ -40,7 +40,7 @@ public class Column extends Thread {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			
+
 		}
 
 	}
@@ -50,8 +50,8 @@ public class Column extends Thread {
 			for (Tank tank : tanks) {
 				if ((tank.getFuelType() == car.getTypeFuel()) && (tank.getQuantityFuel() >= car.getQuantityFuel())) {
 					tank.setQuantityFuel(tank.getQuantityFuel() - car.getQuantityFuel());
-					System.out.println(String.format("Fill car (%s -- %s)---- Tank (%s -- %s)",
-							car.getTypeFuel(), car.getQuantityFuel(),tank.getFuelType(), tank.getQuantityFuel()));
+					System.out.println(String.format("Fill car (%s -- %s)---- Tank (%s -- %s)", car.getTypeFuel(),
+							car.getQuantityFuel(), tank.getFuelType(), tank.getQuantityFuel()));
 					return true;
 				}
 			}

@@ -1,4 +1,4 @@
-package com.home.test.fuelstation;
+package com.itacademy.fuelstation;
 
 public enum Fuel {
 

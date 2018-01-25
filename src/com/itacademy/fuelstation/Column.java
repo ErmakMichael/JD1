@@ -1,9 +1,8 @@
-package com.home.test.fuelstation;
+package com.itacademy.fuelstation;
 
 import java.util.List;
 import java.util.Queue;
 
-import com.home.test.fuelstation2.FuelHolder2;
 
 public class Column extends Thread {
 
@@ -12,12 +11,10 @@ public class Column extends Thread {
 	private Car car;
 
 	public Column(List<Tank> tanks, Queue<Car> cars) {
-
 		this.tanks = tanks;
 		this.cars = cars;
 		System.out.println(String.format("Started %s %s", getClass().getSimpleName(), getName()));
 		this.setDaemon(true);
-
 	}
 
 	@Override
@@ -40,9 +37,7 @@ public class Column extends Thread {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-
 		}
-
 	}
 
 	public boolean fillCar() {

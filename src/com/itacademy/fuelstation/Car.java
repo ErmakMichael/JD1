@@ -1,4 +1,4 @@
-package com.home.test.fuelstation;
+package com.itacademy.fuelstation;
 
 import java.util.Random;
 
@@ -15,12 +15,9 @@ public class Car {
 
 	public Fuel getTypeFuel() {
 		return typeFuel;
-		
 	}
 
 	public int getQuantityFuel() {
 		return quantityFuel;
 	}
-
-	
 }

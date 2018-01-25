@@ -1,9 +1,9 @@
-package com.home.test.fuelstation;
+package com.itacademy.fuelstation;
 
 
 public class Tank {
 
-	public int quantityFuel;
+	private int quantityFuel;
 	private Fuel fuelType;
 
 	public Tank(Fuel fuelType, int quantityFuel) {

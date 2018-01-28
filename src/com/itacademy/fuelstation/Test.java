@@ -16,11 +16,15 @@ public class Test {
 			tanks.add(new Tank(Fuel.values()[i], 100));
 			System.out.println(String.format("Type %s quantity %s ", Fuel.values()[i], tanks.get(i).getQuantityFuel()));
 		}
+		
+		
+		
+		
 		for (int i = 0; i < 5; i++) {
 			Column column = new Column(tanks, cars);
 			column.start();
 		}
-		
+
 		while (!station.isEmptyTank()) {
 			synchronized (cars) {
 				if (cars.isEmpty()) {
@@ -28,10 +32,8 @@ public class Test {
 					cars.notify();
 				}
 			}
-			
-		}
-		
 
+		}
 
 	}
 

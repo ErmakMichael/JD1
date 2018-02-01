@@ -1,45 +1,37 @@
 package com.itacademy.level2.excel.command;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
 
-import com.itacademy.level2.excel.file.Cat;
 
 public class CNewFile extends Command {
 
 	public CNewFile(String key) {
-		super("Создать документ");
+		super("Create a document");
 		setKey(key);
 	}
 
 	@Override
-	public void execute() throws IOException { // should not throw. cathc and retry
-		System.out.println("Введите имя файла для создания");
+	public void execute() throws IOException  { 
+		System.out.println("Enter the name of the file to create////doc.txt////");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
 		String fileName = reader.readLine();
-		// create a new file
 
-		File file = new File(fileName + ".txt");
-		Cat cat = new Cat();
-		cat.setName("Tom");
-
+		
+		ObjectOutputStream out;
 		try {
-			FileOutputStream fos = new FileOutputStream(file);
-			ObjectOutputStream oos = new ObjectOutputStream(fos);
-			oos.writeObject(cat);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			out = new ObjectOutputStream(new FileOutputStream(fileName));
+			out.flush();
+			out.close();
+			System.out.println("File "+ fileName +" created\n");
 		} catch (IOException e) {
-			e.printStackTrace();
-		}finally {
-			System.out.println(String.format("Create %s.txt", fileName));
+			System.out.println("File not created\n");
 		}
+		
+			
 		// print list of actions (commands) for a new file
 	}
 

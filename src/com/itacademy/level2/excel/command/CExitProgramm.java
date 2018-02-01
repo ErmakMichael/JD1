@@ -3,16 +3,16 @@ package com.itacademy.level2.excel.command;
 public class CExitProgramm extends Command {
 
 	public CExitProgramm(String key) {
-		super("Выйти из программы");
+		super("Exit from the programm");
 		setKey(key);
 	}
 
 	@Override
 	public void execute() {
 
-		System.out.println("Программа завершена");
+		System.out.println("\nProgramm is ended");
 		
-		System.exit(1);
+		System.exit(0);
 	}
 
 }

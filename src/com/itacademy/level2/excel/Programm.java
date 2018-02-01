@@ -24,7 +24,7 @@ public class Programm {
 
 	public void start() throws IOException {
 		while (true) {
-			System.out.println("Выберите команду");
+			System.out.println("Select the command");
 			for (Command command : topLevelCommands) {
 				command.printMenuItem();
 			}

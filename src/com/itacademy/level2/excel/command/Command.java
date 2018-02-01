@@ -7,7 +7,6 @@ import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 public abstract class Command {
 
 	private String title;
-
 	private String key;
 
 	public Command(String title) {
